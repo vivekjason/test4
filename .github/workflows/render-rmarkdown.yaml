@@ -27,7 +27,7 @@ jobs:
       
       - name: Install rmarkdown
         run: |
-  install.packages(c("flexdashboard", "tidyverse", "rmarkdown"))
+  install.packages(c("flexdashboard", "tidyverse")
       
       - name: Render Rmarkdown files
         run: |
