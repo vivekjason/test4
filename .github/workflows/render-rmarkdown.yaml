@@ -4,13 +4,13 @@ on:
     
 on:
   schedule:
-    - cron: "30 10,17,23 * * *"
+    - cron: "30 13,17,23 * * *"
 
 name: render-rmarkdown
 
 jobs:
   render-rmarkdown:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -24,10 +24,6 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
 
       - uses: r-lib/actions/setup-renv@v1
-      
-      - name: Install rmarkdown
-        run: |
-  install.packages(c("flexdashboard", "tidyverse")
       
       - name: Render Rmarkdown files
         run: |
