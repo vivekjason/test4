@@ -1,11 +1,7 @@
 on:
-push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-      
+  push:
+    paths: ['**.Rmd']
+    
 on:
   schedule:
     - cron: "30 10,17,23 * * *"
@@ -31,7 +27,7 @@ jobs:
       
       - name: Install rmarkdown
         run: |
-  install.packages(c("flexdashboard", "tidyverse"))
+  install.packages(c("flexdashboard", "tidyverse", "rmarkdown"))
       
       - name: Render Rmarkdown files
         run: |
