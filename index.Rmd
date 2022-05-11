@@ -8,6 +8,9 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+#delete docs folder
+unlink("P:/COVID-19/covid-19-epi/docs", recursive = T, force = T)
+
 library(flexdashboard)
 library(tidyverse)
 ```
