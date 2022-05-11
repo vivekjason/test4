@@ -1,11 +1,9 @@
 on:
   push:
-    paths: ['index.Rmd']
-    
-on:
+    paths: ['**.Rmd']
   schedule:
     - cron: "0 14 * * *"
-
+    
 name: render-rmarkdown
 
 jobs:
