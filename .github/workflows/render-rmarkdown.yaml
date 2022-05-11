@@ -1,6 +1,6 @@
 on:
   push:
-    paths: ['**.Rmd']
+    paths: ['index.Rmd']
     
 on:
   schedule:
