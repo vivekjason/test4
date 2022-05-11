@@ -10,7 +10,7 @@ push:
       
 on:
   schedule:
-    - cron: "30 5,11 * * *"
+    - cron: "30 9,17,23 * * *"
 
 name: render-rmarkdown
 
